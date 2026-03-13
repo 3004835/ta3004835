@@ -23,5 +23,13 @@ const accountData = [
         "Start": "",
         "End": "",
         "type": "Permanent Account"
-    }
+    },
+        {
+        "Username": "xabierdih", 
+        "Password": "mojica1235",
+        "Access": true,
+        "Start": "",
+        "End": "",
+        "type": "Permanent Account"
+    },
 ];
