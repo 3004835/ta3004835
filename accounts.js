@@ -22,7 +22,7 @@ const accountData = [
         "Access": true,
         "Start": "",
         "End": "",
-        "type": "Permanent Account"
+        "type": "Graders"
     },
         {
         "Username": "xabierdih", 
@@ -30,7 +30,7 @@ const accountData = [
         "Access": true,
         "Start": "",
         "End": "",
-        "type": "Permanent Account"
+        "type": "Graders"
     },
             {
         "Username": "MP18", 
@@ -38,6 +38,6 @@ const accountData = [
         "Access": true,
         "Start": "",
         "End": "",
-        "type": "Permanent Account"
-    },
+        "type": "Graders"
+    }
 ];
