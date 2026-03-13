@@ -10,7 +10,7 @@ const accountData = [
     },
     {
         "Username": "Dominic", 
-        "Password": "Dom123456",
+        "Password": "dominicwhitecarljr",
         "Access": true,
         "Start": "",
         "End": "",
@@ -27,6 +27,14 @@ const accountData = [
         {
         "Username": "xabierdih", 
         "Password": "mojica1235",
+        "Access": true,
+        "Start": "",
+        "End": "",
+        "type": "Permanent Account"
+    },
+            {
+        "Username": "MP18", 
+        "Password": "MP18",
         "Access": true,
         "Start": "",
         "End": "",
