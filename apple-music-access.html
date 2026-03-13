@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Music Access - Site Unblocker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #ff6b6b, #4a90e2, #7c3aed, #a855f7);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .main-container {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow: 
+                0 32px 64px rgba(0, 0, 0, 0.12),
+                0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .apple-logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #000000, #1d1d1d);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: white;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .apple-logo:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        h1 {
+            color: #1d1d1d;
+            margin-bottom: 10px;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 30px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .info-message {
+            background: #d1ecf1;
+            color: #0c5460;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border-left: 4px solid #0d6efd;
+            font-size: 14px;
+        }
+
+        .credentials-box {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+
+        .credential-item {
+            margin-bottom: 20px;
+        }
+
+        .credential-label {
+            display: block;
+            margin-bottom: 8px;
+            color: #1d1d1d;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .credential-value {
+            background: rgba(0, 0, 0, 0.05);
+            padding: 12px;
+            border-radius: 8px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 14px;
+            color: #1d1d1d;
+            word-break: break-all;
+        }
+
+        .copy-btn {
+            background: #007aff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.2s ease;
+            margin-left: 12px;
+        }
+
+        .copy-btn:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .buttons-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .apple-btn {
+            padding: 16px 24px;
+            background: linear-gradient(135deg, #000000, #1d1d1d);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .apple-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-btn {
+            padding: 12px 24px;
+            background: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .main-container {
+                padding: 32px 24px;
+                margin: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .buttons-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="apple-logo">🎵</div>
+        <h1>Apple Music Access</h1>
+        <p class="subtitle">Free Music for Schoolmates</p>
+        
+        <div class="info-message">
+            📚 This service is available for all schoolmates. Use the credentials below to access Apple Music.
+        </div>
+        
+        <div class="credentials-box">
+            <div class="credential-item">
+                <div class="credential-label">Email:</div>
+                <div style="display: flex; align-items: center;">
+                    <div class="credential-value" id="email">maxblox138@gmail.com</div>
+                    <button class="copy-btn" onclick="copyToClipboard('email')">Copy</button>
+                </div>
+            </div>
+            
+            <div class="credential-item">
+                <div class="credential-label">Password:</div>
+                <div style="display: flex; align-items: center;">
+                    <div class="credential-value" id="password">WestScranton!Free-Music1</div>
+                    <button class="copy-btn" onclick="copyToClipboard('password')">Copy</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="buttons-grid">
+            <a href="https://music.apple.com" target="_blank" class="apple-btn">
+                <span>🍎</span>
+                Open Apple Music
+            </a>
+            
+            <button class="apple-btn" onclick="openAppleMusic()">
+                <span>🎵</span>
+                Open Apple Music Web
+            </button>
+        </div>
+        
+        <button class="back-btn" onclick="goBack()">← Back to Access Links</button>
+    </div>
+
+    <script>
+        function copyToClipboard(elementId) {
+            const element = document.getElementById(elementId);
+            const text = element.textContent;
+            
+            navigator.clipboard.writeText(text).then(function() {
+                alert('Copied to clipboard!');
+            }).catch(function(err) {
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                alert('Copied to clipboard!');
+            });
+        }
+
+        function openAppleMusic() {
+            window.open('https://music.apple.com', '_blank');
+        }
+
+        function goBack() {
+            window.location.href = 'access-links.html';
+        }
+    </script>
+</body>
+</html>
