@@ -15,5 +15,13 @@ const accountData = [
         "Start": "",
         "End": "",
         "type": "Permanent Account"
+    },
+    {
+        "Username": "Domo", 
+        "Password": "dominic939",
+        "Access": true,
+        "Start": "",
+        "End": "",
+        "type": "Permanent Account"
     }
 ];
